@@ -1,9 +1,7 @@
 package com.fangzai.controller;
 
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.fangzai.entity.PositionInformation;
-import com.fangzai.service.IPositionInformationService;
+import com.fangzai.service.ILiepinService;
 import com.fangzai.utils.Result;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,29 +18,24 @@ import java.util.Map;
  * </p>
  *
  * @author 赵长开
- * @since 2023-10-04
+ * @since 2023-10-16
  */
 @RestController
-@RequestMapping("/positionInformation")
-public class PositionInformationController {
+@RequestMapping("/liepin")
+public class LiepinController {
 
     @Resource
-    private IPositionInformationService positionInformationService;
-
-    @GetMapping("getAllData")
-    public Result getAllData(){
-        return Result.success(positionInformationService.list());
-    }
+    ILiepinService liepinService;
 
     @GetMapping("getCityPositionCount")
     public Result getCityPositionCount(){
-        List<Map<String, Object>> cityPositionCount = positionInformationService.getCityPositionCount();
+        List<Map<String, Object>> cityPositionCount = liepinService.getCityPositionCount();
         return Result.success(cityPositionCount);
     }
 
     @GetMapping("getHotPosition")
     public Result getHotPosition(){
-        List<Map<String, Object>> hotPosition = positionInformationService.getHotPosition();
+        List<Map<String, Object>> hotPosition = liepinService.getHotPosition();
         return Result.success(hotPosition);
     }
 }

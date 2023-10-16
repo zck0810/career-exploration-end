@@ -1,6 +1,6 @@
 package com.fangzai.service;
 
-import com.fangzai.entity.PositionInformation;
+import com.fangzai.entity.Liepin;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.List;
@@ -12,9 +12,9 @@ import java.util.Map;
  * </p>
  *
  * @author 赵长开
- * @since 2023-10-04
+ * @since 2023-10-16
  */
-public interface IPositionInformationService extends IService<PositionInformation> {
+public interface ILiepinService extends IService<Liepin> {
 
     List<Map<String, Object>> getCityPositionCount();
 

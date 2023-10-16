@@ -3,7 +3,6 @@ package com.fangzai.entity;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
-import java.time.LocalDateTime;
 import java.io.Serializable;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -15,40 +14,63 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author 赵长开
- * @since 2023-10-04
+ * @since 2023-10-16
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
 @Accessors(chain = true)
-@TableName("position_information")
-public class PositionInformation implements Serializable {
+@TableName("liepin")
+public class Liepin implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
-    private String job;
+    /**
+     * 职位
+     */
+    private String position;
 
+    /**
+     * 城市
+     */
     private String city;
 
-    private String companyName;
-
+    /**
+     * 薪资
+     */
     private String salary;
 
-    private String salaryMin;
-
-    private String salaryMax;
-
+    /**
+     * 经验
+     */
     private String experience;
 
+    /**
+     * 学历
+     */
     private String education;
 
-    private String positionStatement;
+    /**
+     * 标签
+     */
+    private String tags;
 
-    private String welfare;
+    /**
+     * 公司名
+     */
+    private String companyName;
 
-    private LocalDateTime insertTime;
+    /**
+     * 公司规模
+     */
+    private String companyScale;
+
+    /**
+     * 职位详情
+     */
+    private String href;
 
 
 }

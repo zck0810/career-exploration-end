@@ -1,6 +1,6 @@
 package com.fangzai.mapper;
 
-import com.fangzai.entity.PositionInformation;
+import com.fangzai.entity.Liepin;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
 /**
@@ -9,8 +9,8 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * </p>
  *
  * @author 赵长开
- * @since 2023-10-04
+ * @since 2023-10-16
  */
-public interface PositionInformationMapper extends BaseMapper<PositionInformation> {
+public interface LiepinMapper extends BaseMapper<Liepin> {
 
 }
