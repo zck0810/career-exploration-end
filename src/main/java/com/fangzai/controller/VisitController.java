@@ -13,7 +13,7 @@ import javax.annotation.Resource;
 
 /**
  * <p>
- *  前端控制器
+ * 前端控制器
  * </p>
  *
  * @author 赵长开
@@ -28,9 +28,9 @@ public class VisitController {
 
 
     @GetMapping("/getVisitCount")
-    public Result getVisitCount(){
+    public Result getVisitCount() {
         Visit byId = visitService.getById(1);
-        byId.setVisit(byId.getVisit()+1);
+        byId.setVisit(byId.getVisit() + 1);
         visitService.updateById(byId);
         return Result.success(visitService.getById("1"));
     }
