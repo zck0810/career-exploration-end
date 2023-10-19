@@ -32,7 +32,6 @@ public class CompanyInformationController {
     @PostMapping("/getCompanyData")
     public Result getCompanyData(@RequestBody Map<String,Object> data ){
         String name = (String) data.get("name");
-        System.out.println(name);
         Page<CompanyInformation> page = new Page<>();
         page.setCurrent((Integer) data.get("pageNum"));
         page.setSize((Integer) data.get("pageSize"));
@@ -46,6 +45,26 @@ public class CompanyInformationController {
 
         System.out.println("total===" + result.getTotal());
         return Result.success(result.getRecords(),result.getTotal());
+    }
+
+
+    @PostMapping("/getHighCompanyInformation")
+    public Result getHighCompanyInformation(@RequestBody Map<String,Object> data){
+        Map<String, Object> form = (Map<String, Object>) data.get("form");
+        String key = (String) form.get("key");
+        String region = (String) form.get("region");
+//        String year = (String) data.get("year");
+//        String pay= (String) data.get("pay");
+//        String number = (String) data.get("number");
+        Page<CompanyInformation> page = new Page<>();
+        page.setCurrent((Integer) data.get("pageNum"));
+        page.setSize((Integer) data.get("pageSize"));
+        LambdaQueryWrapper<CompanyInformation> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.like(CompanyInformation::getCompanyName,key).and(wrapper->wrapper.like(CompanyInformation::getProvince,region));
+        IPage result1 = iCompanyInformationService.page(page, queryWrapper);
+        System.out.println("total==="+result1.getTotal());
+        return Result.success(result1.getRecords(),result1.getTotal());
+
     }
 
 }
