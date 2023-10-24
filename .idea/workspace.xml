@@ -22,16 +22,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="993bb724-5991-4346-9b15-b1e120e72c11" name="变更" comment="省份岗位数量">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+    <list default="true" id="45cd7448-f5f4-447e-bf8a-4b1b3439de83" name="Default Changelist" comment="高级搜索查询">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3a1996b0-6510-4822-80ed-5c79b5166682.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3a1996b0-6510-4822-80ed-5c79b5166682.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/controller/CompanyInformationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/controller/CompanyInformationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/controller/LiepinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/controller/LiepinController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/service/ILiepinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/service/ILiepinService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/service/impl/LiepinServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/service/impl/LiepinServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/entity/CompanyInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/entity/CompanyInformation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/entity/Liepin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/entity/Liepin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/mapper/CompanyInformationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/mapper/CompanyInformationMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/service/impl/CompanyInformationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/service/impl/CompanyInformationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/controller/CompanyInformationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fangzai/controller/CompanyInformationController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/controller/LiepinController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fangzai/controller/LiepinController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/ILiepinService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fangzai/service/ILiepinService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/impl/LiepinServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fangzai/service/impl/LiepinServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/entity/CompanyInformation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fangzai/entity/CompanyInformation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/impl/CompanyInformationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fangzai/service/impl/CompanyInformationServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +48,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -56,13 +60,11 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\JavaWeb\localMavenRepository" />
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
         <option name="userSettingsFile" value="D:\JavaWeb\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -71,7 +73,7 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="2WqtkwCBuR6rxcjX9WmRjaF0UOs" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="1" id="Add" />
   </component>
@@ -80,22 +82,24 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;010b05bb56eb537a625d14970adb9a95&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../irms/irms-end" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.445977" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.fangzai.utils" />
@@ -115,13 +119,13 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="993bb724-5991-4346-9b15-b1e120e72c11" name="变更" comment="省份岗位数量" />
+      <changelist id="45cd7448-f5f4-447e-bf8a-4b1b3439de83" name="Default Changelist" comment="" />
       <created>1697472087681</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -138,26 +142,39 @@
       <workItem from="1697532704069" duration="56000" />
       <workItem from="1697532772216" duration="726000" />
       <workItem from="1697533617971" duration="12904000" />
-      <workItem from="1697563947014" duration="12166000" />
-      <workItem from="1697688691373" duration="1829000" />
-      <workItem from="1697781366490" duration="3429000" />
-      <workItem from="1697939921952" duration="1257000" />
-      <workItem from="1697965268233" duration="1459000" />
-      <workItem from="1698062321144" duration="665000" />
-      <workItem from="1698148498761" duration="662000" />
+      <workItem from="1697563947014" duration="28557000" />
+      <workItem from="1697731036469" duration="20758000" />
+      <workItem from="1697827886090" duration="4567000" />
+      <workItem from="1697960359934" duration="19686000" />
+      <workItem from="1698059165068" duration="4232000" />
+      <workItem from="1698129264805" duration="7475000" />
     </task>
-    <task id="LOCAL-00001" summary="省份岗位数量">
-      <created>1697644739865</created>
+    <task id="LOCAL-00001" summary="公司职位查询">
+      <created>1697644042860</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1697644739865</updated>
+      <updated>1697644042860</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="1">
+      <created>1697645921388</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697645921388</updated>
+    </task>
+    <task id="LOCAL-00003" summary="高级搜索查询">
+      <created>1697691979821</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1697691979821</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -169,10 +186,120 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="省份岗位数量" />
-    <option name="LAST_COMMIT_MESSAGE" value="省份岗位数量" />
+    <MESSAGE value="公司职位查询" />
+    <MESSAGE value="1" />
+    <MESSAGE value="高级搜索查询" />
+    <option name="LAST_COMMIT_MESSAGE" value="高级搜索查询" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="446" y="161" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1697637939792">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state x="446" y="161" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1707.1019@0.0.1707.1019" timestamp="1697637939792" />
+    <state x="581" y="206" key="FileChooserDialogImpl" timestamp="1697696270718">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state x="581" y="206" key="FileChooserDialogImpl/0.0.1707.1019@0.0.1707.1019" timestamp="1697696270718" />
+    <state width="405" height="375" key="Git.Branch.Popup" timestamp="1698138105253">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state width="405" height="375" key="Git.Branch.Popup/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1698138105253" />
+    <state width="401" height="371" key="Git.Branch.Popup/0.0.1707.1019@0.0.1707.1019" timestamp="1697691896053" />
+    <state width="1653" height="283" key="GridCell.Tab.0.bottom" timestamp="1698139239586">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state width="1653" height="283" key="GridCell.Tab.0.bottom/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1698139239586" />
+    <state width="1653" height="407" key="GridCell.Tab.0.bottom/0.0.1707.1019@0.0.1707.1019" timestamp="1698028221215" />
+    <state width="1653" height="283" key="GridCell.Tab.0.center" timestamp="1698139239586">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state width="1653" height="283" key="GridCell.Tab.0.center/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1698139239586" />
+    <state width="1653" height="407" key="GridCell.Tab.0.center/0.0.1707.1019@0.0.1707.1019" timestamp="1698028221215" />
+    <state width="1653" height="283" key="GridCell.Tab.0.left" timestamp="1698139239586">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state width="1653" height="283" key="GridCell.Tab.0.left/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1698139239586" />
+    <state width="1653" height="407" key="GridCell.Tab.0.left/0.0.1707.1019@0.0.1707.1019" timestamp="1698028221215" />
+    <state width="1653" height="283" key="GridCell.Tab.0.right" timestamp="1698139239586">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state width="1653" height="283" key="GridCell.Tab.0.right/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1698139239586" />
+    <state width="1653" height="407" key="GridCell.Tab.0.right/0.0.1707.1019@0.0.1707.1019" timestamp="1698028221215" />
+    <state width="1653" height="283" key="GridCell.Tab.1.bottom" timestamp="1698139239586">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state width="1653" height="283" key="GridCell.Tab.1.bottom/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1698139239586" />
+    <state width="1653" height="407" key="GridCell.Tab.1.bottom/0.0.1707.1019@0.0.1707.1019" timestamp="1698028221216" />
+    <state width="1653" height="283" key="GridCell.Tab.1.center" timestamp="1698139239586">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state width="1653" height="283" key="GridCell.Tab.1.center/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1698139239586" />
+    <state width="1653" height="407" key="GridCell.Tab.1.center/0.0.1707.1019@0.0.1707.1019" timestamp="1698028221216" />
+    <state width="1653" height="283" key="GridCell.Tab.1.left" timestamp="1698139239586">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state width="1653" height="283" key="GridCell.Tab.1.left/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1698139239586" />
+    <state width="1653" height="407" key="GridCell.Tab.1.left/0.0.1707.1019@0.0.1707.1019" timestamp="1698028221215" />
+    <state width="1653" height="283" key="GridCell.Tab.1.right" timestamp="1698139239586">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state width="1653" height="283" key="GridCell.Tab.1.right/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1698139239586" />
+    <state width="1653" height="407" key="GridCell.Tab.1.right/0.0.1707.1019@0.0.1707.1019" timestamp="1698028221216" />
+    <state width="1653" height="323" key="GridCell.Tab.2.bottom" timestamp="1697532670798">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state width="1653" height="323" key="GridCell.Tab.2.bottom/0.0.1707.1019@0.0.1707.1019" timestamp="1697532670798" />
+    <state width="1653" height="323" key="GridCell.Tab.2.center" timestamp="1697532670798">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state width="1653" height="323" key="GridCell.Tab.2.center/0.0.1707.1019@0.0.1707.1019" timestamp="1697532670798" />
+    <state width="1653" height="323" key="GridCell.Tab.2.left" timestamp="1697532670798">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state width="1653" height="323" key="GridCell.Tab.2.left/0.0.1707.1019@0.0.1707.1019" timestamp="1697532670798" />
+    <state width="1653" height="323" key="GridCell.Tab.2.right" timestamp="1697532670798">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state width="1653" height="323" key="GridCell.Tab.2.right/0.0.1707.1019@0.0.1707.1019" timestamp="1697532670798" />
+    <state x="269" y="81" key="Maven.ArtifactSearchDialog" timestamp="1697541386950">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state x="269" y="81" key="Maven.ArtifactSearchDialog/0.0.1707.1019@0.0.1707.1019" timestamp="1697541386950" />
+    <state x="22" y="85" key="MergeDialog" timestamp="1697644180002">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state x="22" y="85" key="MergeDialog/0.0.1707.1019@0.0.1707.1019" timestamp="1697644180002" />
+    <state x="219" y="347" width="984" height="325" key="MultipleFileMergeDialog" timestamp="1697644180008">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state x="219" y="347" width="984" height="325" key="MultipleFileMergeDialog/0.0.1707.1019@0.0.1707.1019" timestamp="1697644180008" />
+    <state x="238" y="68" key="SettingsEditor" timestamp="1697638577996">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state x="238" y="68" key="SettingsEditor/0.0.1707.1019@0.0.1707.1019" timestamp="1697638577996" />
+    <state x="346" y="178" key="Vcs.Push.Dialog.v2" timestamp="1697691982756">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state x="346" y="178" key="Vcs.Push.Dialog.v2/0.0.1707.1019@0.0.1707.1019" timestamp="1697691982756" />
+    <state x="519" y="219" key="extract.method.dialog" timestamp="1697800790950">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state x="519" y="219" key="extract.method.dialog/0.0.1707.1019@0.0.1707.1019" timestamp="1697800790950" />
+    <state x="658" y="227" key="refactoring.ChangeSignatureDialog" timestamp="1697546262462">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state x="658" y="227" key="refactoring.ChangeSignatureDialog/0.0.1707.1019@0.0.1707.1019" timestamp="1697546262462" />
+    <state x="426" y="232" key="run.anything.popup" timestamp="1697687171021">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state x="426" y="232" key="run.anything.popup/0.0.1707.1019@0.0.1707.1019" timestamp="1697687171021" />
+    <state x="432" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1697831775072">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state x="432" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1707.1019@0.0.1707.1019" timestamp="1697831775072" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

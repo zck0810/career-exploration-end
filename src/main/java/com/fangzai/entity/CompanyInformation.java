@@ -10,6 +10,8 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 
+import javax.swing.*;
+
 /**
  * <p>
  * 公司信息表
@@ -60,6 +62,12 @@ public class CompanyInformation implements Serializable {
     private String latestAnnualReportAddress;
 
     private String website;
+
+    private Integer tempInsuredNumber;
+
+    private Integer timeDifference;
+
+    private Integer tempCapital;
 
 
 }

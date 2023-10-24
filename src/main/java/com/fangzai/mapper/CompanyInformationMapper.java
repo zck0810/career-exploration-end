@@ -1,8 +1,12 @@
 package com.fangzai.mapper;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.fangzai.entity.CompanyInformation;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;
+
+import javax.xml.crypto.Data;
+import java.util.List;
 
 /**
  * <p>
