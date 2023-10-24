@@ -42,7 +42,16 @@ public class LiepinServiceImpl extends ServiceImpl<LiepinMapper, Liepin> impleme
         wrapper.select("position", "COUNT(*) as count")
                 .groupBy("position")
                 .orderByDesc("count")
-                .last("LIMIT 30");
+                .last("LIMIT 100");
+        return liepinMapper.selectMaps(wrapper);
+    }
+
+    @Override
+    public List<Map<String, Object>> getEducationCount() {
+        QueryWrapper<Liepin> wrapper = new QueryWrapper<>();
+        wrapper.select("education as name","count(education) as value")
+                .groupBy("education").orderByDesc("value")
+                .last("LIMIT 7");
         return liepinMapper.selectMaps(wrapper);
     }
 

@@ -59,5 +59,10 @@ public class LiepinController {
         return Result.success(result.getRecords(),result.getTotal());
     }
 
-
+    @GetMapping("getEducationCount")
+    public Result getEducationCount(){
+        return Result.success(liepinService.getEducationCount());
     }
+
+
+}

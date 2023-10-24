@@ -19,4 +19,6 @@ public interface ILiepinService extends IService<Liepin> {
     List<Map<String, Object>> getCityPositionCount();
 
     List<Map<String, Object>> getHotPosition();
+
+    List<Map<String, Object>> getEducationCount();
 }
