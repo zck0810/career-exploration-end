@@ -52,12 +52,20 @@ public class LiepinController {
 
         LambdaQueryWrapper<Liepin> queryWrapper = new LambdaQueryWrapper<>();
         if (StringUtils.isNotBlank(name)) {
-            queryWrapper.like(Liepin::getPosition, name);
+            queryWrapper.like(Liepin::getPosition, name)
+                    .or().like(Liepin::getEducation, name)
+                    .or().like(Liepin::getCity, name)
+                    .or().like(Liepin::getTags, name)
+                    .or().like(Liepin::getCompanyName, name)
+                    .or().like(Liepin::getSalary, name)
+                    .or().like(Liepin::getExperience, name)
+                    .or().like(Liepin::getCompanyScale, name);
         }
         IPage result = liepinService.page(page, queryWrapper);
         System.out.println("total===" + result.getTotal());
         return Result.success(result.getRecords(), result.getTotal());
     }
+
     //职位高级搜索
     @PostMapping("/getJobInformation")
     public Result getJobInformation(@RequestBody Map<String, Object> data) {
@@ -66,33 +74,37 @@ public class LiepinController {
         String select2 = (String) data.get("select2");
         String select3 = (String) data.get("select3");
         String select4 = (String) data.get("select4");
+        String select5 = (String) data.get("select5");
         Page<Liepin> page = new Page<>();
         page.setCurrent((Integer) data.get("pageNum"));
         page.setSize((Integer) data.get("pageSize"));
         LambdaQueryWrapper<Liepin> queryWrapper = new LambdaQueryWrapper<>();
         Integer num_min;
         Integer num_max;
-        if(select3.contains("薪资面议")){
+        if (select3.contains("薪资面议")) {
             queryWrapper.like(Liepin::getPosition, select1)
                     .and(wrapper -> wrapper.like(Liepin::getExperience, select2))
                     .and(wrapper -> wrapper.like(Liepin::getSalary, select3))
-                    .and(wrapper -> wrapper.like(Liepin::getEducation, select4));
+                    .and(wrapper -> wrapper.like(Liepin::getEducation, select4))
+                    .and(wrapper -> wrapper.like(Liepin::getCity, select5));
         }
-        if (select3.contains("-")){
+        if (select3.contains("-")) {
             num_min = Integer.valueOf(select3.split("-")[0]);
             String number_max = select3.split("-")[1];
             num_max = Integer.valueOf(number_max.substring(0, number_max.length() - 1));
             queryWrapper.like(Liepin::getPosition, select1)
                     .and(wrapper -> wrapper.like(Liepin::getExperience, select2))
-                    .and(wrapper -> wrapper.between(Liepin::getSalaryAverage,num_min,num_max))
-                    .and(wrapper -> wrapper.like(Liepin::getEducation, select4));
-        }else if (select3.contains("K以上")){
-            num_min = Integer.valueOf(select3.substring(0,select3.length() - 3));
+                    .and(wrapper -> wrapper.between(Liepin::getSalaryAverage, num_min, num_max))
+                    .and(wrapper -> wrapper.like(Liepin::getEducation, select4))
+                    .and(wrapper -> wrapper.like(Liepin::getCity, select5));
+        } else if (select3.contains("K以上")) {
+            num_min = Integer.valueOf(select3.substring(0, select3.length() - 3));
             num_max = 100;
             queryWrapper.like(Liepin::getPosition, select1)
                     .and(wrapper -> wrapper.like(Liepin::getExperience, select2))
-                    .and(wrapper -> wrapper.between(Liepin::getSalaryAverage,num_min,num_max))
-                    .and(wrapper -> wrapper.like(Liepin::getEducation, select4));
+                    .and(wrapper -> wrapper.between(Liepin::getSalaryAverage, num_min, num_max))
+                    .and(wrapper -> wrapper.like(Liepin::getEducation, select4))
+                    .and(wrapper -> wrapper.like(Liepin::getCity, select5));
         }
         IPage result = liepinService.page(page, queryWrapper);
         System.out.println("total===" + result.getTotal());
@@ -100,7 +112,7 @@ public class LiepinController {
     }
 
     @GetMapping("getEducationCount")
-    public Result getEducationCount(){
+    public Result getEducationCount() {
         return Result.success(liepinService.getEducationCount());
     }
 

@@ -41,7 +41,12 @@ public class CompanyInformationController {
         LambdaQueryWrapper<CompanyInformation> queryWrapper = new LambdaQueryWrapper<>();
         if (StringUtils.isNotBlank(name)) {
             queryWrapper.like(CompanyInformation::getCompanyName, name)
-                    .or().like(CompanyInformation::getLegalRepresentative, name);
+                    .or().like(CompanyInformation::getLegalRepresentative, name)
+                    .or().like(CompanyInformation::getManageState, name)
+                    .or().like(CompanyInformation::getProvince, name)
+                    .or().like(CompanyInformation::getCity, name)
+                    .or().like(CompanyInformation::getCounty, name)
+                    .or().like(CompanyInformation::getEnterpriseType, name);
         }
 
         IPage result = iCompanyInformationService.page(page, queryWrapper);
@@ -49,6 +54,7 @@ public class CompanyInformationController {
         System.out.println("total===" + result.getTotal());
         return Result.success(result.getRecords(), result.getTotal());
     }
+
 
     //公司高级搜索
     @PostMapping("/getHighCompanyInformation")
@@ -69,7 +75,7 @@ public class CompanyInformationController {
             pay_max1 = Integer.valueOf(year_max.substring(0, year_max.length() - 1));
         } else if (pay.contains("万以上")) {
             pay_min = Integer.valueOf(pay.substring(0, year.length() - 3));
-            pay_max1 =10000000;
+            pay_max1 = 10000000;
         }
         //成立年限
         Integer year_min = null;
@@ -99,7 +105,7 @@ public class CompanyInformationController {
         ArrayList<String> conditions = (ArrayList<String>) form.get("condition");
         for (String condition : conditions) {
             if (condition.equals("联系电话")) {
-                queryWrapper.ne(CompanyInformation::getTelephone,"-");
+                queryWrapper.ne(CompanyInformation::getTelephone, "-");
             }
             if (condition.equals("联系邮箱")) {
                 queryWrapper.ne(CompanyInformation::getMailbox, "-");
@@ -123,18 +129,17 @@ public class CompanyInformationController {
                     .and(wrapper -> wrapper.like(CompanyInformation::getProvince, region))
                     .and(wrapper -> wrapper.between(CompanyInformation::getTempInsuredNumber, finalNumber_min, finalNumber_max))
                     .and(wrapper -> wrapper.between(CompanyInformation::getTimeDifference, finalYear_min, finalYear_max))
-                    .and(wrapper->wrapper.between(CompanyInformation::getTempCapital, finalPay_min, finalPay_max));
+                    .and(wrapper -> wrapper.between(CompanyInformation::getTempCapital, finalPay_min, finalPay_max));
 
         } else {
             queryWrapper.like(CompanyInformation::getProvince, region)
                     .and(wrapper -> wrapper.between(CompanyInformation::getTempInsuredNumber, finalNumber_min, finalNumber_max))
                     .and(wrapper -> wrapper.between(CompanyInformation::getTimeDifference, finalYear_min, finalYear_max))
-                    .and(wrapper->wrapper.between(CompanyInformation::getTempCapital, finalPay_min, finalPay_max));
+                    .and(wrapper -> wrapper.between(CompanyInformation::getTempCapital, finalPay_min, finalPay_max));
         }
         IPage result1 = iCompanyInformationService.page(page, queryWrapper);
         System.out.println("total===" + result1.getTotal());
         return Result.success(result1.getRecords(), result1.getTotal());
 
     }
-
 }
