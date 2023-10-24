@@ -105,6 +105,11 @@ public class LiepinController {
                     .and(wrapper -> wrapper.between(Liepin::getSalaryAverage, num_min, num_max))
                     .and(wrapper -> wrapper.like(Liepin::getEducation, select4))
                     .and(wrapper -> wrapper.like(Liepin::getCity, select5));
+        }else{
+            queryWrapper.like(Liepin::getPosition, select1)
+                    .and(wrapper -> wrapper.like(Liepin::getExperience, select2))
+                    .and(wrapper -> wrapper.like(Liepin::getEducation, select4))
+                    .and(wrapper -> wrapper.like(Liepin::getCity, select5));
         }
         IPage result = liepinService.page(page, queryWrapper);
         System.out.println("total===" + result.getTotal());

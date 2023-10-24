@@ -23,12 +23,54 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45cd7448-f5f4-447e-bf8a-4b1b3439de83" name="Default Changelist" comment="高级搜索查询">
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/controller/CompanyInformationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/controller/CompanyInformationController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/controller/LiepinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/controller/LiepinController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/controller/CompanyInformationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fangzai/controller/CompanyInformationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/controller/LiepinController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fangzai/controller/LiepinController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/career-exploration-end-0.0.1-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/career-exploration-end-0.0.1-SNAPSHOT.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/CareerExplorationEndApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/config/CorsConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/config/MyBatisConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/controller/CompanyInformationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/controller/LiepinController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/controller/ProvincePositionCountController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/controller/TechnologyController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/controller/VisitController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/entity/CompanyInformation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/entity/Liepin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/entity/ProvincePositionCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/entity/Technology.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/entity/Visit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/mapper/CompanyInformationMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/mapper/LiepinMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/mapper/ProvincePositionCountMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/mapper/TechnologyMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/mapper/VisitMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/ICompanyInformationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/ILiepinService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/IProvincePositionCountService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/ITechnologyService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/IVisitService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/impl/CompanyInformationServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/impl/LiepinServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/impl/ProvincePositionCountServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/impl/TechnologyServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/impl/VisitServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/utils/QueryPageParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/utils/Result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/CompanyInformationMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/LiepinMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/ProvincePositionCountMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/TechnologyMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/VisitMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.fangzai.CareerExplorationEndApplicationTests.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.fangzai.CareerExplorationEndApplicationTests.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/fangzai/CareerExplorationEndApplicationTests.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +100,6 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="localRepository" value="D:\JavaWeb\localMavenRepository" />
-        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
         <option name="userSettingsFile" value="D:\JavaWeb\apache-maven-3.6.1\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
@@ -67,7 +108,7 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="2WqtkwCBuR6rxcjX9WmRjaF0UOs" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="1" id="Add" />
   </component>
@@ -76,24 +117,15 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../irms/irms-end" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.445977" />
-    <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
-    <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "node.js.selected.package.tslint": "(autodetect)"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.fangzai.utils" />
@@ -113,7 +145,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -188,129 +220,12 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="公司职位查询" />
     <MESSAGE value="1" />
     <MESSAGE value="高级搜索查询" />
     <option name="LAST_COMMIT_MESSAGE" value="高级搜索查询" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="446" y="161" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1697637939792">
-      <screen x="0" y="0" width="1707" height="1019" />
-    </state>
-    <state x="446" y="161" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1707.1019@0.0.1707.1019" timestamp="1697637939792" />
-    <state x="164" y="85" key="DiffContextDialog" timestamp="1698151742102">
-      <screen x="0" y="0" width="1707" height="1019" />
-    </state>
-    <state x="164" y="85" key="DiffContextDialog/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1698151742102" />
-    <state x="581" y="206" key="FileChooserDialogImpl" timestamp="1697696270718">
-      <screen x="0" y="0" width="1707" height="1019" />
-    </state>
-    <state x="581" y="206" key="FileChooserDialogImpl/0.0.1707.1019@0.0.1707.1019" timestamp="1697696270718" />
-    <state width="417" height="387" key="Git.Branch.Popup" timestamp="1698151720625">
-      <screen x="0" y="0" width="1707" height="1019" />
-    </state>
-    <state width="417" height="387" key="Git.Branch.Popup/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1698151720625" />
-    <state width="401" height="371" key="Git.Branch.Popup/0.0.1707.1019@0.0.1707.1019" timestamp="1697691896053" />
-    <state width="1653" height="283" key="GridCell.Tab.0.bottom" timestamp="1698154620128">
-      <screen x="0" y="0" width="1707" height="1019" />
-    </state>
-    <state width="1653" height="283" key="GridCell.Tab.0.bottom/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1698154620128" />
-    <state width="1653" height="407" key="GridCell.Tab.0.bottom/0.0.1707.1019@0.0.1707.1019" timestamp="1698028221215" />
-    <state width="1653" height="283" key="GridCell.Tab.0.center" timestamp="1698154620128">
-      <screen x="0" y="0" width="1707" height="1019" />
-    </state>
-    <state width="1653" height="283" key="GridCell.Tab.0.center/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1698154620128" />
-    <state width="1653" height="407" key="GridCell.Tab.0.center/0.0.1707.1019@0.0.1707.1019" timestamp="1698028221215" />
-    <state width="1653" height="283" key="GridCell.Tab.0.left" timestamp="1698154620128">
-      <screen x="0" y="0" width="1707" height="1019" />
-    </state>
-    <state width="1653" height="283" key="GridCell.Tab.0.left/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1698154620128" />
-    <state width="1653" height="407" key="GridCell.Tab.0.left/0.0.1707.1019@0.0.1707.1019" timestamp="1698028221215" />
-    <state width="1653" height="283" key="GridCell.Tab.0.right" timestamp="1698154620128">
-      <screen x="0" y="0" width="1707" height="1019" />
-    </state>
-    <state width="1653" height="283" key="GridCell.Tab.0.right/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1698154620128" />
-    <state width="1653" height="407" key="GridCell.Tab.0.right/0.0.1707.1019@0.0.1707.1019" timestamp="1698028221215" />
-    <state width="1653" height="283" key="GridCell.Tab.1.bottom" timestamp="1698154620128">
-      <screen x="0" y="0" width="1707" height="1019" />
-    </state>
-    <state width="1653" height="283" key="GridCell.Tab.1.bottom/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1698154620128" />
-    <state width="1653" height="407" key="GridCell.Tab.1.bottom/0.0.1707.1019@0.0.1707.1019" timestamp="1698028221216" />
-    <state width="1653" height="283" key="GridCell.Tab.1.center" timestamp="1698154620128">
-      <screen x="0" y="0" width="1707" height="1019" />
-    </state>
-    <state width="1653" height="283" key="GridCell.Tab.1.center/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1698154620128" />
-    <state width="1653" height="407" key="GridCell.Tab.1.center/0.0.1707.1019@0.0.1707.1019" timestamp="1698028221216" />
-    <state width="1653" height="283" key="GridCell.Tab.1.left" timestamp="1698154620128">
-      <screen x="0" y="0" width="1707" height="1019" />
-    </state>
-    <state width="1653" height="283" key="GridCell.Tab.1.left/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1698154620128" />
-    <state width="1653" height="407" key="GridCell.Tab.1.left/0.0.1707.1019@0.0.1707.1019" timestamp="1698028221215" />
-    <state width="1653" height="283" key="GridCell.Tab.1.right" timestamp="1698154620128">
-      <screen x="0" y="0" width="1707" height="1019" />
-    </state>
-    <state width="1653" height="283" key="GridCell.Tab.1.right/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1698154620128" />
-    <state width="1653" height="407" key="GridCell.Tab.1.right/0.0.1707.1019@0.0.1707.1019" timestamp="1698028221216" />
-    <state width="1653" height="323" key="GridCell.Tab.2.bottom" timestamp="1697532670798">
-      <screen x="0" y="0" width="1707" height="1019" />
-    </state>
-    <state width="1653" height="323" key="GridCell.Tab.2.bottom/0.0.1707.1019@0.0.1707.1019" timestamp="1697532670798" />
-    <state width="1653" height="323" key="GridCell.Tab.2.center" timestamp="1697532670798">
-      <screen x="0" y="0" width="1707" height="1019" />
-    </state>
-    <state width="1653" height="323" key="GridCell.Tab.2.center/0.0.1707.1019@0.0.1707.1019" timestamp="1697532670798" />
-    <state width="1653" height="323" key="GridCell.Tab.2.left" timestamp="1697532670798">
-      <screen x="0" y="0" width="1707" height="1019" />
-    </state>
-    <state width="1653" height="323" key="GridCell.Tab.2.left/0.0.1707.1019@0.0.1707.1019" timestamp="1697532670798" />
-    <state width="1653" height="323" key="GridCell.Tab.2.right" timestamp="1697532670798">
-      <screen x="0" y="0" width="1707" height="1019" />
-    </state>
-    <state width="1653" height="323" key="GridCell.Tab.2.right/0.0.1707.1019@0.0.1707.1019" timestamp="1697532670798" />
-    <state x="269" y="81" key="Maven.ArtifactSearchDialog" timestamp="1697541386950">
-      <screen x="0" y="0" width="1707" height="1019" />
-    </state>
-    <state x="269" y="81" key="Maven.ArtifactSearchDialog/0.0.1707.1019@0.0.1707.1019" timestamp="1697541386950" />
-    <state x="22" y="85" key="MergeDialog" timestamp="1697644180002">
-      <screen x="0" y="0" width="1707" height="1019" />
-    </state>
-    <state x="22" y="85" key="MergeDialog/0.0.1707.1019@0.0.1707.1019" timestamp="1697644180002" />
-    <state x="219" y="347" width="984" height="325" key="MultipleFileMergeDialog" timestamp="1697644180008">
-      <screen x="0" y="0" width="1707" height="1019" />
-    </state>
-    <state x="219" y="347" width="984" height="325" key="MultipleFileMergeDialog/0.0.1707.1019@0.0.1707.1019" timestamp="1697644180008" />
-    <state x="238" y="68" key="SettingsEditor" timestamp="1697638577996">
-      <screen x="0" y="0" width="1707" height="1019" />
-    </state>
-    <state x="238" y="68" key="SettingsEditor/0.0.1707.1019@0.0.1707.1019" timestamp="1697638577996" />
-    <state x="346" y="178" key="Vcs.Push.Dialog.v2" timestamp="1698148996852">
-      <screen x="0" y="0" width="1707" height="1019" />
-    </state>
-    <state x="346" y="178" key="Vcs.Push.Dialog.v2/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1698148996852" />
-    <state x="346" y="178" key="Vcs.Push.Dialog.v2/0.0.1707.1019@0.0.1707.1019" timestamp="1697691982756" />
-    <state x="519" y="219" key="extract.method.dialog" timestamp="1697800790950">
-      <screen x="0" y="0" width="1707" height="1019" />
-    </state>
-    <state x="519" y="219" key="extract.method.dialog/0.0.1707.1019@0.0.1707.1019" timestamp="1697800790950" />
-    <state x="508" y="155" key="git4idea.branch.GitSmartOperationDialog" timestamp="1698151746502">
-      <screen x="0" y="0" width="1707" height="1019" />
-    </state>
-    <state x="508" y="155" key="git4idea.branch.GitSmartOperationDialog/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1698151746502" />
-    <state x="658" y="227" key="refactoring.ChangeSignatureDialog" timestamp="1697546262462">
-      <screen x="0" y="0" width="1707" height="1019" />
-    </state>
-    <state x="658" y="227" key="refactoring.ChangeSignatureDialog/0.0.1707.1019@0.0.1707.1019" timestamp="1697546262462" />
-    <state x="426" y="232" key="run.anything.popup" timestamp="1697687171021">
-      <screen x="0" y="0" width="1707" height="1019" />
-    </state>
-    <state x="426" y="232" key="run.anything.popup/0.0.1707.1019@0.0.1707.1019" timestamp="1697687171021" />
-    <state x="432" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1697831775072">
-      <screen x="0" y="0" width="1707" height="1019" />
-    </state>
-    <state x="432" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1707.1019@0.0.1707.1019" timestamp="1697831775072" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
