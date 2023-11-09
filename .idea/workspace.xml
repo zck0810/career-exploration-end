@@ -22,7 +22,52 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45cd7448-f5f4-447e-bf8a-4b1b3439de83" name="Default Changelist" comment="高级搜索查询" />
+    <list default="true" id="45cd7448-f5f4-447e-bf8a-4b1b3439de83" name="Default Changelist" comment="可视化大屏">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3a1996b0-6510-4822-80ed-5c79b5166682.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3a1996b0-6510-4822-80ed-5c79b5166682.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/config/CorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/controller/LiepinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/controller/LiepinController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/entity/FreshGraduateSalary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/entity/FreshGraduateSalary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/service/ILiepinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/service/ILiepinService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/service/impl/LiepinServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/service/impl/LiepinServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/CareerExplorationEndApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/config/CorsConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/config/MyBatisConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/controller/CompanyInformationController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/controller/LiepinController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/controller/ProvincePositionCountController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/controller/TechnologyController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/controller/VisitController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/entity/CompanyInformation.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/entity/Liepin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/entity/ProvincePositionCount.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/entity/Technology.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/entity/Visit.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/mapper/CompanyInformationMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/mapper/LiepinMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/mapper/ProvincePositionCountMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/mapper/TechnologyMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/mapper/VisitMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/ICompanyInformationService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/ILiepinService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/IProvincePositionCountService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/ITechnologyService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/IVisitService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/impl/CompanyInformationServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/impl/LiepinServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/impl/ProvincePositionCountServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/impl/TechnologyServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/impl/VisitServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/utils/QueryPageParam.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/utils/Result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/CompanyInformationMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/LiepinMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/ProvincePositionCountMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/TechnologyMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/VisitMapper.xml" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,11 +92,13 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="D:\JavaWeb\localMavenRepository" />
-        <option name="userSettingsFile" value="D:\JavaWeb\apache-maven-3.6.1\conf\settings.xml" />
+        <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -68,15 +115,21 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;010b05bb56eb537a625d14970adb9a95&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.fangzai.utils" />
@@ -93,10 +146,14 @@
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.CareerExplorationEndApplication" />
+        <item itemvalue="Spring Boot.CareerExplorationEndApplication" />
+        <item itemvalue="Spring Boot.CareerExplorationEndApplication" />
+        <item itemvalue="Spring Boot.CareerExplorationEndApplication" />
+        <item itemvalue="Spring Boot.CareerExplorationEndApplication" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -126,6 +183,21 @@
       <workItem from="1698059165068" duration="4232000" />
       <workItem from="1698129264805" duration="7475000" />
       <workItem from="1698148853535" duration="4269000" />
+      <workItem from="1698234361714" duration="626000" />
+      <workItem from="1698238300920" duration="1347000" />
+      <workItem from="1698289428340" duration="4043000" />
+      <workItem from="1698428673462" duration="550000" />
+      <workItem from="1698435287881" duration="14000" />
+      <workItem from="1698674398849" duration="625000" />
+      <workItem from="1698830969212" duration="355000" />
+      <workItem from="1698846674273" duration="1389000" />
+      <workItem from="1699010369371" duration="1356000" />
+      <workItem from="1699073980687" duration="1225000" />
+      <workItem from="1699174269860" duration="1227000" />
+      <workItem from="1699256956816" duration="1219000" />
+      <workItem from="1699346759101" duration="2215000" />
+      <workItem from="1699424612862" duration="6679000" />
+      <workItem from="1699514751473" duration="1831000" />
     </task>
     <task id="LOCAL-00001" summary="公司职位查询">
       <created>1697644042860</created>
@@ -162,11 +234,18 @@
       <option name="project" value="LOCAL" />
       <updated>1698163995869</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="可视化大屏">
+      <created>1698187471575</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1698187471575</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -183,7 +262,9 @@
     <MESSAGE value="公司职位查询" />
     <MESSAGE value="1" />
     <MESSAGE value="高级搜索查询" />
-    <option name="LAST_COMMIT_MESSAGE" value="高级搜索查询" />
+    <MESSAGE value="1025" />
+    <MESSAGE value="可视化大屏" />
+    <option name="LAST_COMMIT_MESSAGE" value="可视化大屏" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

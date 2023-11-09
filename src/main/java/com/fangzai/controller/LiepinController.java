@@ -37,8 +37,8 @@ public class LiepinController {
     }
 
     @GetMapping("getHotPosition")
-    public Result getHotPosition() {
-        List<Map<String, Object>> hotPosition = liepinService.getHotPosition();
+    public Result getHotPosition(@RequestParam(name = "selectedCity") String selectedCity) {
+        List<Map<String, Object>> hotPosition = liepinService.getHotPosition(selectedCity);
         return Result.success(hotPosition);
     }
 

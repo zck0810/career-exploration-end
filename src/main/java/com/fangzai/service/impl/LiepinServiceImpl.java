@@ -37,12 +37,21 @@ public class LiepinServiceImpl extends ServiceImpl<LiepinMapper, Liepin> impleme
     }
 
     @Override
-    public List<Map<String, Object>> getHotPosition() {
+    public List<Map<String, Object>> getHotPosition(String selectedCity) {
         QueryWrapper<Liepin> wrapper = new QueryWrapper<>();
-        wrapper.select("position", "COUNT(*) as count")
-                .groupBy("position")
-                .orderByDesc("count")
-                .last("LIMIT 100");
+        if(selectedCity.equals("全国")){
+            wrapper.select("position", "COUNT(*) as count")
+                    .groupBy("position")
+                    .orderByDesc("count")
+                    .last("LIMIT 100");
+        }else {
+            wrapper.select("position", "COUNT(*) as count")
+                    .like("city",selectedCity)
+                    .groupBy("position")
+                    .orderByDesc("count")
+                    .last("LIMIT 100");
+        }
+
         return liepinMapper.selectMaps(wrapper);
     }
 
@@ -51,7 +60,7 @@ public class LiepinServiceImpl extends ServiceImpl<LiepinMapper, Liepin> impleme
         QueryWrapper<Liepin> wrapper = new QueryWrapper<>();
         wrapper.select("education as name","count(education) as value")
                 .groupBy("education").orderByDesc("value")
-                .last("LIMIT 7");
+                .last("LIMIT 6");
         return liepinMapper.selectMaps(wrapper);
     }
 
