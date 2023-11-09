@@ -124,6 +124,7 @@ public class CompanyInformationController {
         Integer finalYear_max = year_max1;
         Integer finalPay_min = pay_min;
         Integer finalPay_max = pay_max1;
+
         if (StringUtils.isNotBlank(key)) {
             queryWrapper.like(CompanyInformation::getCompanyName, key)
                     .and(wrapper -> wrapper.like(CompanyInformation::getProvince, region))
