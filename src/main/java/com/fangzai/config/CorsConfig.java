@@ -15,6 +15,7 @@ public class CorsConfig {
         CorsConfiguration config = new CorsConfiguration(); // 创建CORS配置
         config.setAllowCredentials(true); // 允许发送认证信息（例如，Cookie）
         config.addAllowedOrigin("http://localhost:8866"); // 允许的前端域名或IP
+//        config.addAllowedOrigin("http://82.156.137.114:8866"); // 允许的前端域名或IP
         config.addAllowedHeader("*"); // 允许所有请求头
         config.addAllowedMethod("*"); // 允许所有HTTP方法（GET、POST、PUT、DELETE等）
         source.registerCorsConfiguration("/**", config); // 将CORS配置应用于所有URL路径

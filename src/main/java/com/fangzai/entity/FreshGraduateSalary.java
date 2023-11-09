@@ -10,7 +10,7 @@ import lombok.experimental.Accessors;
 
 /**
  * <p>
- * 
+ *
  * </p>
  *
  * @author 赵长开
@@ -51,11 +51,6 @@ public class FreshGraduateSalary implements Serializable {
     private Integer keyUndergraduate;
 
     /**
-     * 硕士不分区
-     */
-    private Integer masterUnzoned;
-
-    /**
      * 普通硕士院校
      */
     private Integer generalMaster;
@@ -64,11 +59,6 @@ public class FreshGraduateSalary implements Serializable {
      * 重点硕士院校
      */
     private Integer keyMaster;
-
-    /**
-     * 博士不分区
-     */
-    private Integer doctorUnzoned;
 
     /**
      * 普通博士院校

@@ -5,7 +5,6 @@ import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.StringUtils;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.fangzai.entity.CompanyInformation;
 import com.fangzai.entity.Liepin;
 import com.fangzai.service.ILiepinService;
 import com.fangzai.utils.Result;
@@ -37,8 +36,8 @@ public class LiepinController {
     }
 
     @GetMapping("getHotPosition")
-    public Result getHotPosition() {
-        List<Map<String, Object>> hotPosition = liepinService.getHotPosition();
+    public Result getHotPosition(@RequestParam(name = "selectedCity") String selectedCity) {
+        List<Map<String, Object>> hotPosition = liepinService.getHotPosition(selectedCity);
         return Result.success(hotPosition);
     }
 
