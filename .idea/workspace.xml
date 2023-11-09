@@ -23,50 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="45cd7448-f5f4-447e-bf8a-4b1b3439de83" name="Default Changelist" comment="可视化大屏">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/3a1996b0-6510-4822-80ed-5c79b5166682.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/3a1996b0-6510-4822-80ed-5c79b5166682.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/config/CorsConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/controller/LiepinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/controller/LiepinController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/entity/FreshGraduateSalary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/entity/FreshGraduateSalary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/service/ILiepinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/service/ILiepinService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/service/impl/LiepinServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/service/impl/LiepinServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/CareerExplorationEndApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/config/CorsConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/config/MyBatisConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/controller/CompanyInformationController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/controller/LiepinController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/controller/ProvincePositionCountController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/controller/TechnologyController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/controller/VisitController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/entity/CompanyInformation.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/entity/Liepin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/entity/ProvincePositionCount.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/entity/Technology.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/entity/Visit.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/mapper/CompanyInformationMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/mapper/LiepinMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/mapper/ProvincePositionCountMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/mapper/TechnologyMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/mapper/VisitMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/ICompanyInformationService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/ILiepinService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/IProvincePositionCountService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/ITechnologyService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/IVisitService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/impl/CompanyInformationServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/impl/LiepinServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/impl/ProvincePositionCountServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/impl/TechnologyServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/impl/VisitServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/utils/QueryPageParam.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/utils/Result.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/CompanyInformationMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/LiepinMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/ProvincePositionCountMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/TechnologyMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/VisitMapper.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
