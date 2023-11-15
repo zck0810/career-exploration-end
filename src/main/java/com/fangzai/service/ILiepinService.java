@@ -16,7 +16,7 @@ import java.util.Map;
  */
 public interface ILiepinService extends IService<Liepin> {
 
-    List<Map<String, Object>> getCityPositionCount();
+    List<Map<String, Object>> getCityPositionCount(String selectedCity);
 
     List<Map<String, Object>> getHotPosition(String selectedCity);
 

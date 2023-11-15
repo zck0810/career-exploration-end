@@ -26,13 +26,23 @@ public class LiepinServiceImpl extends ServiceImpl<LiepinMapper, Liepin> impleme
     private LiepinMapper liepinMapper;
 
     @Override
-    public List<Map<String, Object>> getCityPositionCount() {
+    public List<Map<String, Object>> getCityPositionCount(String selectedCity) {
         QueryWrapper<Liepin> wrapper = new QueryWrapper<>();
-        wrapper.select("LEFT(city, 2) as city_prefix", "COUNT(LEFT(city, 2)) as count")
-                .groupBy("city_prefix")
-                .orderByDesc("count")
-                .orderByAsc("city_prefix")
-                .last("LIMIT 20");
+        if(selectedCity.equals("全国")){
+            wrapper.select("LEFT(city, 2) as city_prefix", "COUNT(LEFT(city, 2)) as count")
+                    .groupBy("city_prefix")
+                    .orderByDesc("count")
+                    .orderByAsc("city_prefix")
+                    .last("LIMIT 20");
+        }else {
+            wrapper.select("SUBSTRING_INDEX(city, '-', -1) as city_prefix", "COUNT(*) as count")
+                    .like("city",selectedCity)
+                    .like("city","-")
+                    .groupBy("city_prefix")
+                    .orderByDesc("count")
+                    .orderByDesc("city_prefix")
+                    .last("LIMIT 20");
+        }
         return liepinMapper.selectMaps(wrapper);
     }
 

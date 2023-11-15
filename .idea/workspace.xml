@@ -22,8 +22,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45cd7448-f5f4-447e-bf8a-4b1b3439de83" name="Default Changelist" comment="可视化大屏">
+    <list default="true" id="45cd7448-f5f4-447e-bf8a-4b1b3439de83" name="Default Changelist" comment="11-09">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/controller/LiepinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/controller/LiepinController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/service/ILiepinService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/service/ILiepinService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/service/impl/LiepinServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/service/impl/LiepinServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,6 +158,13 @@
       <workItem from="1699346759101" duration="2215000" />
       <workItem from="1699424612862" duration="6679000" />
       <workItem from="1699514751473" duration="1831000" />
+      <workItem from="1699588687856" duration="631000" />
+      <workItem from="1699605576609" duration="5349000" />
+      <workItem from="1699672632909" duration="5412000" />
+      <workItem from="1699777908695" duration="1225000" />
+      <workItem from="1699882936018" duration="734000" />
+      <workItem from="1699951638058" duration="1234000" />
+      <workItem from="1700033680331" duration="493000" />
     </task>
     <task id="LOCAL-00001" summary="公司职位查询">
       <created>1697644042860</created>
@@ -198,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698187471575</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="11-09">
+      <created>1699522070824</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1699522070824</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,7 +238,8 @@
     <MESSAGE value="高级搜索查询" />
     <MESSAGE value="1025" />
     <MESSAGE value="可视化大屏" />
-    <option name="LAST_COMMIT_MESSAGE" value="可视化大屏" />
+    <MESSAGE value="11-09" />
+    <option name="LAST_COMMIT_MESSAGE" value="11-09" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
