@@ -26,7 +26,6 @@ public class PythonController {
         // 执行Python脚本并返回结果
         Result result1 = executePythonScript(desc);
         String data = (String) result1.getData();
-        System.out.println(data);
         //分割得到单个元素
         String[] split = data.split(",");
         LambdaQueryWrapper<Liepin> queryWrapper = new LambdaQueryWrapper<>();
@@ -71,16 +70,14 @@ public class PythonController {
                 })
                 .last("LIMIT 10");
         List<Liepin> list = liepinService.list(queryWrapper);
-        System.out.println(list);
         return Result.success(list);
     }
 
     private Result executePythonScript(String inputData) {
         String result = "";
-        System.out.println(inputData);
         try {
             // 设置Python脚本路径和参数
-            String pythonScriptPath = "D:\\Model模型\\KeyBERT\\test\\test1.py";
+            String pythonScriptPath = "E:\\tempProject\\career-exploration\\KeyBERT\\test\\test1.py";
             String[] cmd = {"python", pythonScriptPath, inputData};
 
             // 创建进程并执行Python脚本
@@ -94,7 +91,6 @@ public class PythonController {
             }
             // 等待脚本执行完成
             int exitCode = process.waitFor();
-            System.out.println("Python脚本执行完成，退出码: " + exitCode);
 
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
