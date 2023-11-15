@@ -28,7 +28,7 @@ public class Result {
         return new Result(20000, "success", data, total);
     }
 
-    //失败响应
+    //失败响应null
     public static Result error(String msg) {
         return new Result(0, msg, 0L, null);
     }
