@@ -30,8 +30,8 @@ public class LiepinController {
     ILiepinService liepinService;
 
     @GetMapping("getCityPositionCount")
-    public Result getCityPositionCount() {
-        List<Map<String, Object>> cityPositionCount = liepinService.getCityPositionCount();
+    public Result getCityPositionCount(@RequestParam(name = "selectedCity") String selectedCity) {
+        List<Map<String, Object>> cityPositionCount = liepinService.getCityPositionCount(selectedCity);
         return Result.success(cityPositionCount);
     }
 
