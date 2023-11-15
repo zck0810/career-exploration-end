@@ -22,8 +22,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45cd7448-f5f4-447e-bf8a-4b1b3439de83" name="Default Changelist" comment="可视化大屏">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/controller/LiepinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/controller/LiepinController.java" afterDir="false" />
+    <list default="true" id="45cd7448-f5f4-447e-bf8a-4b1b3439de83" name="Default Changelist" comment="11-09：职位推荐">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/controller/PythonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/controller/PythonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/controller/CompanyInformationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fangzai/controller/CompanyInformationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/controller/PythonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fangzai/controller/PythonController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/CompanyInformationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/CompanyInformationMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,13 +57,6 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="useMavenConfig" value="true" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
@@ -72,21 +70,19 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;010b05bb56eb537a625d14970adb9a95&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.fangzai.utils" />
@@ -110,7 +106,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -155,6 +151,13 @@
       <workItem from="1699346759101" duration="2215000" />
       <workItem from="1699424612862" duration="6679000" />
       <workItem from="1699514751473" duration="1831000" />
+      <workItem from="1699577799941" duration="13381000" />
+      <workItem from="1699620885791" duration="841000" />
+      <workItem from="1699775183027" duration="4481000" />
+      <workItem from="1699843507915" duration="5946000" />
+      <workItem from="1699867553223" duration="11980000" />
+      <workItem from="1699944179590" duration="8731000" />
+      <workItem from="1700029604018" duration="3188000" />
     </task>
     <task id="LOCAL-00001" summary="公司职位查询">
       <created>1697644042860</created>
@@ -198,11 +201,18 @@
       <option name="project" value="LOCAL" />
       <updated>1698187471575</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="11-09：职位推荐">
+      <created>1699534228432</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1699534228432</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -214,6 +224,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="公司职位查询" />
@@ -221,7 +232,94 @@
     <MESSAGE value="高级搜索查询" />
     <MESSAGE value="1025" />
     <MESSAGE value="可视化大屏" />
-    <option name="LAST_COMMIT_MESSAGE" value="可视化大屏" />
+    <MESSAGE value="11-09：职位推荐" />
+    <option name="LAST_COMMIT_MESSAGE" value="11-09：职位推荐" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="612" y="149" key="#com.intellij.ide.util.MemberChooser" timestamp="1699585555562">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state x="612" y="149" key="#com.intellij.ide.util.MemberChooser/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1699585555562" />
+    <state x="356" y="420" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1699944626392">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state x="356" y="420" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1699944626392" />
+    <state width="1867" height="766" key="GridCell.Tab.0.bottom" timestamp="1700033173451">
+      <screen x="2560" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1653" height="403" key="GridCell.Tab.0.bottom/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1700031746194" />
+    <state width="1867" height="766" key="GridCell.Tab.0.bottom/0.0.1707.1019/2560.0.1920.1032@2560.0.1920.1032" timestamp="1700033173451" />
+    <state width="1867" height="766" key="GridCell.Tab.0.center" timestamp="1700033173451">
+      <screen x="2560" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1653" height="403" key="GridCell.Tab.0.center/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1700031746194" />
+    <state width="1867" height="766" key="GridCell.Tab.0.center/0.0.1707.1019/2560.0.1920.1032@2560.0.1920.1032" timestamp="1700033173451" />
+    <state width="1867" height="766" key="GridCell.Tab.0.left" timestamp="1700033173451">
+      <screen x="2560" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1653" height="403" key="GridCell.Tab.0.left/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1700031746194" />
+    <state width="1867" height="766" key="GridCell.Tab.0.left/0.0.1707.1019/2560.0.1920.1032@2560.0.1920.1032" timestamp="1700033173451" />
+    <state width="1867" height="766" key="GridCell.Tab.0.right" timestamp="1700033173451">
+      <screen x="2560" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1653" height="403" key="GridCell.Tab.0.right/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1700031746194" />
+    <state width="1867" height="766" key="GridCell.Tab.0.right/0.0.1707.1019/2560.0.1920.1032@2560.0.1920.1032" timestamp="1700033173451" />
+    <state width="1867" height="766" key="GridCell.Tab.1.bottom" timestamp="1700033173451">
+      <screen x="2560" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1653" height="403" key="GridCell.Tab.1.bottom/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1700031746194" />
+    <state width="1867" height="766" key="GridCell.Tab.1.bottom/0.0.1707.1019/2560.0.1920.1032@2560.0.1920.1032" timestamp="1700033173451" />
+    <state width="1867" height="766" key="GridCell.Tab.1.center" timestamp="1700033173451">
+      <screen x="2560" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1653" height="403" key="GridCell.Tab.1.center/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1700031746194" />
+    <state width="1867" height="766" key="GridCell.Tab.1.center/0.0.1707.1019/2560.0.1920.1032@2560.0.1920.1032" timestamp="1700033173451" />
+    <state width="1867" height="766" key="GridCell.Tab.1.left" timestamp="1700033173451">
+      <screen x="2560" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1653" height="403" key="GridCell.Tab.1.left/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1700031746194" />
+    <state width="1867" height="766" key="GridCell.Tab.1.left/0.0.1707.1019/2560.0.1920.1032@2560.0.1920.1032" timestamp="1700033173451" />
+    <state width="1867" height="766" key="GridCell.Tab.1.right" timestamp="1700033173451">
+      <screen x="2560" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1653" height="403" key="GridCell.Tab.1.right/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1700031746194" />
+    <state width="1867" height="766" key="GridCell.Tab.1.right/0.0.1707.1019/2560.0.1920.1032@2560.0.1920.1032" timestamp="1700033173451" />
+    <state width="1653" height="323" key="GridCell.Tab.2.bottom" timestamp="1699867497485">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state width="1653" height="323" key="GridCell.Tab.2.bottom/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1699867497485" />
+    <state width="1653" height="323" key="GridCell.Tab.2.center" timestamp="1699867497485">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state width="1653" height="323" key="GridCell.Tab.2.center/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1699867497485" />
+    <state width="1653" height="323" key="GridCell.Tab.2.left" timestamp="1699867497485">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state width="1653" height="323" key="GridCell.Tab.2.left/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1699867497485" />
+    <state width="1653" height="323" key="GridCell.Tab.2.right" timestamp="1699867497485">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state width="1653" height="323" key="GridCell.Tab.2.right/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1699867497485" />
+    <state x="328" y="85" key="MergeDialog" timestamp="1699534264024">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state x="328" y="85" key="MergeDialog/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1699534264024" />
+    <state x="715" y="347" width="639" height="325" key="MultipleFileMergeDialog" timestamp="1699534270630">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state x="715" y="347" width="639" height="325" key="MultipleFileMergeDialog/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1699534270630" />
+    <state x="238" y="0" key="SettingsEditor" timestamp="1699867490384">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state x="238" y="0" key="SettingsEditor/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1699867490384" />
+    <state x="346" y="178" key="Vcs.Push.Dialog.v2" timestamp="1699534229733">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state x="346" y="178" key="Vcs.Push.Dialog.v2/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1699534229733" />
+    <state x="432" y="-1" width="840" height="1034" key="search.everywhere.popup" timestamp="1699585808159">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state x="432" y="-1" width="840" height="1034" key="search.everywhere.popup/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1699585808159" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
