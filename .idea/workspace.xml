@@ -22,10 +22,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45cd7448-f5f4-447e-bf8a-4b1b3439de83" name="Default Changelist" comment="11-09">
+    <list default="true" id="45cd7448-f5f4-447e-bf8a-4b1b3439de83" name="Default Changelist" comment="11-15">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/controller/PythonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/controller/PythonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/controller/CompanyInformationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/controller/CompanyInformationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/controller/CompanyScaleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/controller/CompanyScaleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/service/ICompanyInformationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/service/ICompanyInformationService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/service/impl/CompanyInformationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/service/impl/CompanyInformationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/controller/CompanyInformationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fangzai/controller/CompanyInformationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/controller/CompanyScaleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fangzai/controller/CompanyScaleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/controller/LiepinController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fangzai/controller/LiepinController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/controller/PythonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fangzai/controller/PythonController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/ICompanyInformationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fangzai/service/ICompanyInformationService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/ILiepinService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fangzai/service/ILiepinService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/impl/CompanyInformationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fangzai/service/impl/CompanyInformationServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/impl/LiepinServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fangzai/service/impl/LiepinServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +57,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="zhaochangkai" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,15 +78,20 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "node.js.selected.package.tslint": "(autodetect)"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;010b05bb56eb537a625d14970adb9a95&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.fangzai.utils" />
@@ -99,7 +115,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -151,6 +167,14 @@
       <workItem from="1699867553223" duration="11980000" />
       <workItem from="1699944179590" duration="8731000" />
       <workItem from="1700029604018" duration="3188000" />
+      <workItem from="1700096375864" duration="585000" />
+      <workItem from="1700114024769" duration="796000" />
+      <workItem from="1700208476646" duration="4990000" />
+      <workItem from="1700285494434" duration="981000" />
+      <workItem from="1700371775925" duration="1229000" />
+      <workItem from="1700480845029" duration="3644000" />
+      <workItem from="1700566819119" duration="8114000" />
+      <workItem from="1700622615640" duration="1837000" />
     </task>
     <task id="LOCAL-00001" summary="公司职位查询">
       <created>1697644042860</created>
@@ -201,11 +225,25 @@
       <option name="project" value="LOCAL" />
       <updated>1699534228432</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="11-15">
+      <created>1700041038155</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1700041038155</updated>
+    </task>
+    <task id="LOCAL-00009" summary="11-15">
+      <created>1700041117672</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1700041117672</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -225,7 +263,8 @@
     <MESSAGE value="1025" />
     <MESSAGE value="可视化大屏" />
     <MESSAGE value="11-09：职位推荐" />
-    <option name="LAST_COMMIT_MESSAGE" value="11-09：职位推荐" />
+    <MESSAGE value="11-15" />
+    <option name="LAST_COMMIT_MESSAGE" value="11-15" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

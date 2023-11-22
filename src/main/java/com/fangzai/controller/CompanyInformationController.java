@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -53,6 +54,14 @@ public class CompanyInformationController {
 
         System.out.println("total===" + result.getTotal());
         return Result.success(result.getRecords(), result.getTotal());
+    }
+
+
+    @GetMapping("getCompanyScaleData")
+    public Result getCompanyScaleData(@RequestParam(name = "selectedCity") String selectedCity){
+        List<Map<String, Object>> companyScaleData = iCompanyInformationService.getCompanyScaleData(selectedCity);
+
+        return Result.success(companyScaleData);
     }
 
 
