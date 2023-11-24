@@ -3,6 +3,9 @@ package com.fangzai.mapper;
 import com.fangzai.entity.Liepin;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 
+import java.util.List;
+import java.util.Map;
+
 /**
  * <p>
  *  Mapper 接口
@@ -13,4 +16,5 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  */
 public interface LiepinMapper extends BaseMapper<Liepin> {
 
+    List<Map<String, Object>> getHotPosition(String selectedCity);
 }

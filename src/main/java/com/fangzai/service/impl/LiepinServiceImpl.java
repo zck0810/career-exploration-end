@@ -48,21 +48,7 @@ public class LiepinServiceImpl extends ServiceImpl<LiepinMapper, Liepin> impleme
 
     @Override
     public List<Map<String, Object>> getHotPosition(String selectedCity) {
-        QueryWrapper<Liepin> wrapper = new QueryWrapper<>();
-        if(selectedCity.equals("全国")){
-            wrapper.select("position", "COUNT(*) as count")
-                    .groupBy("position")
-                    .orderByDesc("count")
-                    .last("LIMIT 100");
-        }else {
-            wrapper.select("position", "COUNT(*) as count")
-                    .like("city",selectedCity)
-                    .groupBy("position")
-                    .orderByDesc("count")
-                    .last("LIMIT 100");
-        }
-
-        return liepinMapper.selectMaps(wrapper);
+        return liepinMapper.getHotPosition(selectedCity);
     }
 
     @Override
