@@ -34,13 +34,35 @@ public class LiepinController {
         List<Map<String, Object>> cityPositionCount = liepinService.getCityPositionCount(selectedCity);
         return Result.success(cityPositionCount);
     }
+    //岗位总数
+    @GetMapping("/getPositionTotal")
+    public Result getPositionTotal(){
+        long count = liepinService.count();
+        return Result.success(count);
+    }
+    //万元以上岗位
+    @GetMapping("/getHighSalaryTotal")
+    public Result getHighSalaryTotal(){
+        LambdaQueryWrapper<Liepin> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.ge(Liepin::getSalaryAverage,10);
+        long count = liepinService.count(queryWrapper);
+        return Result.success(count);
+    }
+    //万元以下岗位
+    @GetMapping("/getLowSalaryTotal")
+    public Result getLowSalaryTotal(){
+        LambdaQueryWrapper<Liepin> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.between(Liepin::getSalaryAverage,6,10);
+        long count = liepinService.count(queryWrapper);
+        return Result.success(count);
+    }
 
     @GetMapping("getHotPosition")
     public Result getHotPosition(@RequestParam(name = "selectedCity") String selectedCity) {
         List<Map<String, Object>> hotPosition = liepinService.getHotPosition(selectedCity);
         return Result.success(hotPosition);
     }
-
+    //职位分页查询
     @PostMapping("/getPositionData")
     public Result getPositionData(@RequestBody Map<String, Object> data) {
         String name = (String) data.get("name");

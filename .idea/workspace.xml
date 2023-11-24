@@ -22,20 +22,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45cd7448-f5f4-447e-bf8a-4b1b3439de83" name="Default Changelist" comment="11-15">
+    <list default="true" id="45cd7448-f5f4-447e-bf8a-4b1b3439de83" name="Default Changelist" comment="11-15：职位推荐">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/controller/CompanyInformationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/controller/CompanyInformationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/controller/CompanyScaleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/controller/CompanyScaleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/service/ICompanyInformationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/service/ICompanyInformationService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/service/impl/CompanyInformationServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/service/impl/CompanyInformationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/controller/LiepinController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/controller/LiepinController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/controller/PythonController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/controller/PythonController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/controller/TechnologyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/controller/TechnologyController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fangzai/service/impl/LiepinServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fangzai/service/impl/LiepinServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/controller/CompanyInformationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fangzai/controller/CompanyInformationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/controller/CompanyScaleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fangzai/controller/CompanyScaleController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/controller/LiepinController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fangzai/controller/LiepinController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/controller/PythonController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fangzai/controller/PythonController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/ICompanyInformationService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fangzai/service/ICompanyInformationService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/ILiepinService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fangzai/service/ILiepinService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/impl/CompanyInformationServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fangzai/service/impl/CompanyInformationServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/controller/TechnologyController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fangzai/controller/TechnologyController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/fangzai/service/impl/LiepinServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fangzai/service/impl/LiepinServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,20 +77,15 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;010b05bb56eb537a625d14970adb9a95&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
+  </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.fangzai.utils" />
@@ -115,7 +109,7 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -175,6 +169,14 @@
       <workItem from="1700480845029" duration="3644000" />
       <workItem from="1700566819119" duration="8114000" />
       <workItem from="1700622615640" duration="1837000" />
+      <workItem from="1700652319756" duration="2219000" />
+      <workItem from="1700665518232" duration="6894000" />
+      <workItem from="1700708732492" duration="15000" />
+      <workItem from="1700709601999" duration="1079000" />
+      <workItem from="1700714209324" duration="4955000" />
+      <workItem from="1700754573729" duration="1841000" />
+      <workItem from="1700784382611" duration="14081000" />
+      <workItem from="1700842897625" duration="1448000" />
     </task>
     <task id="LOCAL-00001" summary="公司职位查询">
       <created>1697644042860</created>
@@ -243,7 +245,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -255,6 +257,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="公司职位查询" />
@@ -265,6 +268,64 @@
     <MESSAGE value="11-09：职位推荐" />
     <MESSAGE value="11-15" />
     <option name="LAST_COMMIT_MESSAGE" value="11-15" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="93" y="93" width="1521" height="833" key="DiffContextDialog" timestamp="1700650142328">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state x="93" y="93" width="1521" height="833" key="DiffContextDialog/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1700650142328" />
+    <state width="359" height="561" key="Git.Branch.Popup" timestamp="1700652520507">
+      <screen x="0" y="0" width="1707" height="1019" />
+    </state>
+    <state width="359" height="561" key="Git.Branch.Popup/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1700652520507" />
+    <state width="1867" height="294" key="GridCell.Tab.0.bottom" timestamp="1700837431510">
+      <screen x="2560" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1653" height="306" key="GridCell.Tab.0.bottom/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1700813725692" />
+    <state width="1867" height="294" key="GridCell.Tab.0.bottom/0.0.1707.1019/2560.0.1920.1032@2560.0.1920.1032" timestamp="1700837431510" />
+    <state width="1653" height="218" key="GridCell.Tab.0.bottom/0.0.1707.1019@0.0.1707.1019" timestamp="1700757766956" />
+    <state width="1867" height="294" key="GridCell.Tab.0.center" timestamp="1700837431510">
+      <screen x="2560" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1653" height="306" key="GridCell.Tab.0.center/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1700813725692" />
+    <state width="1867" height="294" key="GridCell.Tab.0.center/0.0.1707.1019/2560.0.1920.1032@2560.0.1920.1032" timestamp="1700837431510" />
+    <state width="1653" height="218" key="GridCell.Tab.0.center/0.0.1707.1019@0.0.1707.1019" timestamp="1700757766956" />
+    <state width="1867" height="294" key="GridCell.Tab.0.left" timestamp="1700837431510">
+      <screen x="2560" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1653" height="306" key="GridCell.Tab.0.left/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1700813725692" />
+    <state width="1867" height="294" key="GridCell.Tab.0.left/0.0.1707.1019/2560.0.1920.1032@2560.0.1920.1032" timestamp="1700837431510" />
+    <state width="1653" height="218" key="GridCell.Tab.0.left/0.0.1707.1019@0.0.1707.1019" timestamp="1700757766956" />
+    <state width="1867" height="294" key="GridCell.Tab.0.right" timestamp="1700837431510">
+      <screen x="2560" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1653" height="306" key="GridCell.Tab.0.right/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1700813725692" />
+    <state width="1867" height="294" key="GridCell.Tab.0.right/0.0.1707.1019/2560.0.1920.1032@2560.0.1920.1032" timestamp="1700837431510" />
+    <state width="1653" height="218" key="GridCell.Tab.0.right/0.0.1707.1019@0.0.1707.1019" timestamp="1700757766956" />
+    <state width="1867" height="294" key="GridCell.Tab.1.bottom" timestamp="1700837431510">
+      <screen x="2560" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1653" height="306" key="GridCell.Tab.1.bottom/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1700813725692" />
+    <state width="1867" height="294" key="GridCell.Tab.1.bottom/0.0.1707.1019/2560.0.1920.1032@2560.0.1920.1032" timestamp="1700837431510" />
+    <state width="1653" height="218" key="GridCell.Tab.1.bottom/0.0.1707.1019@0.0.1707.1019" timestamp="1700757766956" />
+    <state width="1867" height="294" key="GridCell.Tab.1.center" timestamp="1700837431510">
+      <screen x="2560" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1653" height="306" key="GridCell.Tab.1.center/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1700813725692" />
+    <state width="1867" height="294" key="GridCell.Tab.1.center/0.0.1707.1019/2560.0.1920.1032@2560.0.1920.1032" timestamp="1700837431510" />
+    <state width="1653" height="218" key="GridCell.Tab.1.center/0.0.1707.1019@0.0.1707.1019" timestamp="1700757766956" />
+    <state width="1867" height="294" key="GridCell.Tab.1.left" timestamp="1700837431510">
+      <screen x="2560" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1653" height="306" key="GridCell.Tab.1.left/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1700813725692" />
+    <state width="1867" height="294" key="GridCell.Tab.1.left/0.0.1707.1019/2560.0.1920.1032@2560.0.1920.1032" timestamp="1700837431510" />
+    <state width="1653" height="218" key="GridCell.Tab.1.left/0.0.1707.1019@0.0.1707.1019" timestamp="1700757766956" />
+    <state width="1867" height="294" key="GridCell.Tab.1.right" timestamp="1700837431510">
+      <screen x="2560" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1653" height="306" key="GridCell.Tab.1.right/0.0.1707.1019/2560.0.1920.1032@0.0.1707.1019" timestamp="1700813725692" />
+    <state width="1867" height="294" key="GridCell.Tab.1.right/0.0.1707.1019/2560.0.1920.1032@2560.0.1920.1032" timestamp="1700837431510" />
+    <state width="1653" height="218" key="GridCell.Tab.1.right/0.0.1707.1019@0.0.1707.1019" timestamp="1700757766956" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

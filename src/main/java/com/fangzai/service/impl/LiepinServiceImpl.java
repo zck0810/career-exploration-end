@@ -53,13 +53,13 @@ public class LiepinServiceImpl extends ServiceImpl<LiepinMapper, Liepin> impleme
             wrapper.select("position", "COUNT(*) as count")
                     .groupBy("position")
                     .orderByDesc("count")
-                    .last("LIMIT 100");
+                    .last("LIMIT 30");
         }else {
             wrapper.select("position", "COUNT(*) as count")
                     .like("city",selectedCity)
                     .groupBy("position")
                     .orderByDesc("count")
-                    .last("LIMIT 100");
+                    .last("LIMIT 30");
         }
 
         return liepinMapper.selectMaps(wrapper);
