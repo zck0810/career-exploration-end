@@ -31,6 +31,11 @@ public class CompanyInformationController {
     @Autowired
     private ICompanyInformationService iCompanyInformationService;
 
+    @GetMapping("/getCompanyTotal")
+    public Result getCompanyTotal(){
+        long count = iCompanyInformationService.count();
+        return Result.success(count);
+    }
     //公司分页查询
     @PostMapping("/getCompanyData")
     public Result getCompanyData(@RequestBody Map<String, Object> data) {

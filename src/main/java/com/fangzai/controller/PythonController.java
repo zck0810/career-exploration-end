@@ -29,47 +29,74 @@ public class PythonController {
         //分割得到单个元素
         String[] split = data.split(",");
         LambdaQueryWrapper<Liepin> queryWrapper = new LambdaQueryWrapper<>();
-        queryWrapper
-                .and(wrapper -> {
-                    wrapper.or().like(Liepin::getCity, split[0])
-                            .or().like(Liepin::getTags, split[0])
-                            .or().like(Liepin::getEducation, split[0])
-                            .or().like(Liepin::getPosition, split[0])
-                            .or().like(Liepin::getSalary, split[0])
-                            .or().like(Liepin::getExperience, split[0]);
-                })
-                .and(wrapper -> {
-                    wrapper.or().like(Liepin::getCity, split[1])
-                            .or().like(Liepin::getTags, split[1])
-                            .or().like(Liepin::getEducation, split[1])
-                            .or().like(Liepin::getPosition, split[1])
-                            .or().like(Liepin::getSalary, split[1])
-                            .or().like(Liepin::getExperience, split[1]);
-                })
-                .or(wrapper -> {
-                    wrapper.like(Liepin::getCity, split[2]).or().like(Liepin::getTags, split[2])
-                            .or().like(Liepin::getEducation, split[2])
-                            .or().like(Liepin::getPosition, split[2])
-                            .or().like(Liepin::getSalary, split[2])
-                            .or().like(Liepin::getExperience, split[2]);
-                })
-                .or(wrapper -> {
-                    wrapper.like(Liepin::getCity, split[3]).or().like(Liepin::getTags, split[3])
-                            .or().like(Liepin::getEducation, split[3])
-                            .or().like(Liepin::getPosition, split[3])
-                            .or().like(Liepin::getSalary, split[3])
-                            .or().like(Liepin::getExperience, split[3]);
-                })
-                .or(wrapper -> {
-                    wrapper.like(Liepin::getCity, split[4])
-                            .or().like(Liepin::getTags, split[4])
-                            .or().like(Liepin::getEducation, split[4])
-                            .or().like(Liepin::getPosition, split[4])
-                            .or().like(Liepin::getSalary, split[4])
-                            .or().like(Liepin::getExperience, split[4]);
-                })
-                .last("LIMIT 10");
+        if (split.length==5) {
+            queryWrapper
+                    .and(wrapper -> {
+                        wrapper.or().like(Liepin::getCity, split[0])
+                                .or().like(Liepin::getTags, split[0])
+                                .or().like(Liepin::getEducation, split[0])
+                                .or().like(Liepin::getPosition, split[0])
+                                .or().like(Liepin::getSalary, split[0])
+                                .or().like(Liepin::getExperience, split[0]);
+                    })
+                    .and(wrapper -> {
+                        wrapper.or().like(Liepin::getCity, split[1])
+                                .or().like(Liepin::getTags, split[1])
+                                .or().like(Liepin::getEducation, split[1])
+                                .or().like(Liepin::getPosition, split[1])
+                                .or().like(Liepin::getSalary, split[1])
+                                .or().like(Liepin::getExperience, split[1]);
+                    })
+                    .or(wrapper -> {
+                        wrapper.like(Liepin::getCity, split[2]).or().like(Liepin::getTags, split[2])
+                                .or().like(Liepin::getEducation, split[2])
+                                .or().like(Liepin::getPosition, split[2])
+                                .or().like(Liepin::getSalary, split[2])
+                                .or().like(Liepin::getExperience, split[2]);
+                    })
+                    .or(wrapper -> {
+                        wrapper.like(Liepin::getCity, split[3]).or().like(Liepin::getTags, split[3])
+                                .or().like(Liepin::getEducation, split[3])
+                                .or().like(Liepin::getPosition, split[3])
+                                .or().like(Liepin::getSalary, split[3])
+                                .or().like(Liepin::getExperience, split[3]);
+                    })
+                    .or(wrapper -> {
+                        wrapper.like(Liepin::getCity, split[4])
+                                .or().like(Liepin::getTags, split[4])
+                                .or().like(Liepin::getEducation, split[4])
+                                .or().like(Liepin::getPosition, split[4])
+                                .or().like(Liepin::getSalary, split[4])
+                                .or().like(Liepin::getExperience, split[4]);
+                    }).last("LIMIT 10");
+        } else {
+            queryWrapper
+                    .and(wrapper -> {
+                        wrapper.or().like(Liepin::getCity, split[0])
+                                .or().like(Liepin::getTags, split[0])
+                                .or().like(Liepin::getEducation, split[0])
+                                .or().like(Liepin::getPosition, split[0])
+                                .or().like(Liepin::getSalary, split[0])
+                                .or().like(Liepin::getExperience, split[0]);
+                    })
+                    .and(wrapper -> {
+                        wrapper.or().like(Liepin::getCity, split[1])
+                                .or().like(Liepin::getTags, split[1])
+                                .or().like(Liepin::getEducation, split[1])
+                                .or().like(Liepin::getPosition, split[1])
+                                .or().like(Liepin::getSalary, split[1])
+                                .or().like(Liepin::getExperience, split[1]);
+                    })
+                    .or(wrapper -> {
+                        wrapper.like(Liepin::getCity, split[2]).or().like(Liepin::getTags, split[2])
+                                .or().like(Liepin::getEducation, split[2])
+                                .or().like(Liepin::getPosition, split[2])
+                                .or().like(Liepin::getSalary, split[2])
+                                .or().like(Liepin::getExperience, split[2]);
+                    }).last("LIMIT 10");
+        }
         List<Liepin> list = liepinService.list(queryWrapper);
+        System.out.println(list);
         return Result.success(list);
     }
 
@@ -77,7 +104,7 @@ public class PythonController {
         String result = "";
         try {
             // 设置Python脚本路径和参数
-            String pythonScriptPath = "E:\\tempProject\\career-exploration\\KeyBERT\\test\\test1.py";
+            String pythonScriptPath = "D:\\Model模型\\KeyBERT\\test\\test1.py";
             String[] cmd = {"python", pythonScriptPath, inputData};
 
             // 创建进程并执行Python脚本
