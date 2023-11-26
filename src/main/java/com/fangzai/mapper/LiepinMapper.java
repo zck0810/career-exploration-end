@@ -12,9 +12,11 @@ import java.util.Map;
  * </p>
  *
  * @author 赵长开
- * @since 2023-10-16
+ * @since 2023-11-26
  */
 public interface LiepinMapper extends BaseMapper<Liepin> {
 
     List<Map<String, Object>> getHotPosition(String selectedCity);
+
+    List<Map<String, Object>> getPositionRecommendationData(Object positionsObject, Object citiesObject, Object salariesObject, String education, String experience, Object technologiesObject);
 }

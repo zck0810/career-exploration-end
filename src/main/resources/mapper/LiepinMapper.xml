@@ -3,7 +3,6 @@
 <mapper namespace="com.fangzai.mapper.LiepinMapper">
 
     <select id="getHotPosition" resultType="java.util.Map" parameterType="java.lang.String">
-
         SELECT
         category,
         COUNT(*) AS total
@@ -40,4 +39,57 @@
         ORDER BY total DESC
         LIMIT 30;
     </select>
+
+
+    <select id="getPositionRecommendationData" resultType="java.util.Map">
+        SELECT
+        *
+        FROM liepin
+        <if test="(positionsObject != null and positionsObject.size() > 0) or (citiesObject != null and citiesObject.size() > 0) or (salariesObject != null and salariesObject.size() > 0) or (technologiesObject != null and technologiesObject.size() > 0) or (education != null)  or (experience != null)">
+            WHERE
+        </if>
+        <if test="positionsObject != null and positionsObject.size() > 0">
+            <foreach collection="positionsObject" item="position" open="(" separator=" OR " close=")">
+                position LIKE CONCAT('%', #{position}, '%')
+            </foreach>
+        </if>
+        <if test="citiesObject != null and citiesObject.size() > 0">
+            <if test="positionsObject != null and positionsObject.size() > 0">
+                AND
+            </if>
+            city LIKE
+            <foreach collection="citiesObject" item="city" open="(" separator=" OR " close=")">
+                CONCAT('%', #{city}, '%')
+            </foreach>
+        </if>
+        <if test="salariesObject != null and salariesObject.size() > 0">
+            <if test="positionsObject != null and positionsObject.size() > 0 || citiesObject != null and citiesObject.size() > 0">
+                AND
+            </if>
+            <foreach collection="salariesObject" item="salary" open="(" separator=" OR " close=")">
+                ${salary} BETWEEN salary_min AND salary_max
+            </foreach>
+        </if>
+        <if test="technologiesObject != null and technologiesObject.size() > 0">
+            <if test="positionsObject != null and positionsObject.size() > 0 || citiesObject != null and citiesObject.size() > 0 || salariesObject != null and salariesObject.size() > 0">
+                AND
+            </if>
+            <foreach collection="technologiesObject" item="technology" open="(" separator=" OR " close=")">
+                tags LIKE CONCAT('%', #{technology}, '%')
+            </foreach>
+        </if>
+        <if test="education != null">
+            <if test="positionsObject != null and positionsObject.size() > 0 || citiesObject != null and citiesObject.size() > 0 || salariesObject != null and salariesObject.size() > 0 || technologiesObject != null and technologiesObject.size() > 0">
+                AND
+            </if>
+            education LIKE CONCAT('%', #{education}, '%')
+        </if>
+        <if test="experience != null">
+            <if test="positionsObject != null and positionsObject.size() > 0 || citiesObject != null and citiesObject.size() > 0 || salariesObject != null and salariesObject.size() > 0 || technologiesObject != null and technologiesObject.size() > 0 || education != null">
+                AND
+            </if>
+            experience LIKE CONCAT('%', #{experience}, '%')
+        </if>
+    </select>
+
 </mapper>

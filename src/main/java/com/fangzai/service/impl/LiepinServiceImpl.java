@@ -60,4 +60,10 @@ public class LiepinServiceImpl extends ServiceImpl<LiepinMapper, Liepin> impleme
         return liepinMapper.selectMaps(wrapper);
     }
 
+    @Override
+    public List<Map<String, Object>> getPositionRecommendationData(Object positionsObject, Object citiesObject, Object salariesObject, String education, String experience, Object technologiesObject) {
+
+        return liepinMapper.getPositionRecommendationData(positionsObject,citiesObject,salariesObject,education,experience,technologiesObject);
+    }
+
 }

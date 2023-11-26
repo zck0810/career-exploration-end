@@ -1,11 +1,10 @@
 package com.fangzai.entity;
 
+import java.math.BigDecimal;
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
 import java.io.Serializable;
-import java.math.BigDecimal;
-
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -16,7 +15,7 @@ import lombok.experimental.Accessors;
  * </p>
  *
  * @author 赵长开
- * @since 2023-10-16
+ * @since 2023-11-26
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -74,6 +73,19 @@ public class Liepin implements Serializable {
      */
     private String href;
 
+    /**
+     * 最小薪资
+     */
+    private BigDecimal salaryMin;
+
+    /**
+     * 最大薪资
+     */
+    private BigDecimal salaryMax;
+
+    /**
+     * 平均薪资
+     */
     private BigDecimal salaryAverage;
 
 

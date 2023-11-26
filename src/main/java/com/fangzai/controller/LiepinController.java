@@ -11,6 +11,7 @@ import com.fangzai.utils.Result;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
@@ -137,10 +138,22 @@ public class LiepinController {
         return Result.success(result.getRecords(), result.getTotal());
     }
 
-    @GetMapping("getEducationCount")
+    @GetMapping("/getEducationCount")
     public Result getEducationCount() {
         return Result.success(liepinService.getEducationCount());
     }
 
+    @PostMapping("getPositionRecommendationData")
+    public Result getPositionRecommendationData(@RequestBody Map<String, Object> data){
+        System.out.println(data);
+        Object positionsObject = data.get("positions");
+        Object citiesObject = data.get("cities");
+        Object salariesObject = data.get("salaries");
+        String education = (String) data.get("education");
+        String experience  = (String) data.get("experience");
+        Object technologiesObject = data.get("technologies");
+        List<Map<String, Object>> positionListData = liepinService.getPositionRecommendationData(positionsObject,citiesObject,salariesObject,education,experience,technologiesObject);
+        return Result.success(positionListData);
+    }
 
 }
