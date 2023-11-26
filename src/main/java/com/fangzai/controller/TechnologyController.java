@@ -30,8 +30,8 @@ public class TechnologyController {
     @GetMapping("getTechnicalFrequencyStatistics")
     public Result getTechnicalFrequencyStatistics(){
         List<Technology> list = technologyService.list();
-        List<Technology> top40List = list.stream().limit(40).collect(Collectors.toList());
-        return Result.success(top40List);
+        List<Technology> top50List = list.stream().limit(50).collect(Collectors.toList());
+        return Result.success(top50List);
     }
 
 }
