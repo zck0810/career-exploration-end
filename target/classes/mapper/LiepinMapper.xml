@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fangzai.mapper.LiepinMapper">
+
+    <select id="getHotPosition" resultType="java.util.Map" parameterType="java.lang.String">
+
+        SELECT
+        category,
+        COUNT(*) AS total
+        FROM
+        (
+        SELECT
+        position,
+        CASE
+        WHEN position LIKE '%前端%' OR position LIKE '%WEB前端%' OR position LIKE '%HTML%' THEN '前端开发工程师'
+        WHEN position LIKE '%Java%' OR position LIKE '%java%' THEN 'Java开发工程师'
+        WHEN position LIKE '%C++%' OR position LIKE '%c++%' THEN 'C++开发工程师'
+        WHEN position LIKE '%Python%' OR position LIKE '%python%' THEN 'Python开发工程师'
+        WHEN position LIKE '%PHP%' THEN 'PHP开发工程师'
+        WHEN position LIKE '%测试%' THEN '测试工程师'
+        WHEN position LIKE '%产品经理%' THEN '产品经理'
+        WHEN position LIKE '%大数据开发%' THEN '大数据开发工程师'
+        WHEN position LIKE '%算法工程师%' THEN '算法工程师'
+        WHEN position LIKE '%运维%' THEN '运维工程师'
+        WHEN position LIKE '%数据挖掘%' THEN '数据挖掘'
+        WHEN position LIKE '%自然语言处理%' THEN '自然语言处理（NPL）'
+        WHEN position LIKE '%全栈%' THEN '全栈开发工程师'
+        WHEN position LIKE '%嵌入式%' THEN '嵌入式开发工程师'
+        WHEN position LIKE '%c#' OR position LIKE '%C#%' THEN 'C#开发工程师'
+        WHEN position LIKE '%.net%' OR position LIKE '%.NET%' OR position LIKE '%.Net%' THEN '.NET开发工程师'
+        ELSE position
+        END AS category
+        FROM
+        liepin
+        <if test="!selectedCity.equals('全国')">
+            WHERE city LIKE '%' || #{selectedCity} || '%'
+        </if>
+        ) t
+        GROUP BY category
+        ORDER BY total DESC
+        LIMIT 30;
+    </select>
+</mapper>
