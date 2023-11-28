@@ -37,7 +37,7 @@
         ) t
         GROUP BY category
         ORDER BY total DESC
-        LIMIT 30;
+        LIMIT 10;
     </select>
 
 
