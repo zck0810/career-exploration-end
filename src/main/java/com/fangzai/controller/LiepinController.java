@@ -53,7 +53,7 @@ public class LiepinController {
     @GetMapping("/getLowSalaryTotal")
     public Result getLowSalaryTotal(){
         LambdaQueryWrapper<Liepin> queryWrapper = new LambdaQueryWrapper<>();
-        queryWrapper.between(Liepin::getSalaryAverage,6,10);
+        queryWrapper.between(Liepin::getSalaryAverage,6,8);
         long count = liepinService.count(queryWrapper);
         return Result.success(count);
     }
