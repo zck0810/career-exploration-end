@@ -32,7 +32,7 @@
         FROM
         liepin
         <if test="!selectedCity.equals('全国')">
-            WHERE city LIKE '%' || #{selectedCity} || '%'
+            WHERE city LIKE CONCAT('%', #{selectedCity}, '%')
         </if>
         ) t
         GROUP BY category
