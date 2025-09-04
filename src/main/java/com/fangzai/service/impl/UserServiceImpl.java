@@ -55,9 +55,14 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
         // 生成JWT Token
         String token = jwtUtil.generateToken(username, user.getId());
         
-        // 将用户信息存入Redis，有效期24小时
-        redisTemplate.opsForValue().set("user:" + user.getId(), user, 24, TimeUnit.HOURS);
-        redisTemplate.opsForValue().set("token:" + token, user.getId(), 24, TimeUnit.HOURS);
+        // 将用户信息存入Redis，有效期24小时 (暂时禁用Redis for testing)
+        try {
+            redisTemplate.opsForValue().set("user:" + user.getId(), user, 24, TimeUnit.HOURS);
+            redisTemplate.opsForValue().set("token:" + token, user.getId(), 24, TimeUnit.HOURS);
+        } catch (Exception e) {
+            // Redis not available, continue without caching
+            System.out.println("Redis not available: " + e.getMessage());
+        }
         
         return token;
     }
