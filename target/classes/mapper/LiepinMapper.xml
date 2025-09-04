@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fangzai.mapper.LiepinMapper">
+
+    <select id="getHotPosition" resultType="java.util.Map" parameterType="java.lang.String">
+        SELECT
+        category,
+        COUNT(*) AS total
+        FROM
+        (
+        SELECT
+        position,
+        CASE
+        WHEN position LIKE '%前端%' OR position LIKE '%WEB前端%' OR position LIKE '%HTML%' THEN '前端开发工程师'
+        WHEN position LIKE '%Java%' OR position LIKE '%java%' THEN 'Java开发工程师'
+        WHEN position LIKE '%C++%' OR position LIKE '%c++%' THEN 'C++开发工程师'
+        WHEN position LIKE '%Python%' OR position LIKE '%python%' THEN 'Python开发工程师'
+        WHEN position LIKE '%PHP%' THEN 'PHP开发工程师'
+        WHEN position LIKE '%测试%' THEN '测试工程师'
+        WHEN position LIKE '%产品经理%' THEN '产品经理'
+        WHEN position LIKE '%大数据开发%' THEN '大数据开发工程师'
+        WHEN position LIKE '%算法工程师%' THEN '算法工程师'
+        WHEN position LIKE '%运维%' THEN '运维工程师'
+        WHEN position LIKE '%数据挖掘%' THEN '数据挖掘'
+        WHEN position LIKE '%自然语言处理%' THEN '自然语言处理（NPL）'
+        WHEN position LIKE '%全栈%' THEN '全栈开发工程师'
+        WHEN position LIKE '%嵌入式%' THEN '嵌入式开发工程师'
+        WHEN position LIKE '%c#' OR position LIKE '%C#%' THEN 'C#开发工程师'
+        WHEN position LIKE '%.net%' OR position LIKE '%.NET%' OR position LIKE '%.Net%' THEN '.NET开发工程师'
+        ELSE position
+        END AS category
+        FROM
+        liepin
+        <if test="!selectedCity.equals('全国')">
+            WHERE city LIKE CONCAT('%', #{selectedCity}, '%')
+        </if>
+        ) t
+        GROUP BY category
+        ORDER BY total DESC
+        LIMIT 10;
+    </select>
+
+
+    <select id="getPositionRecommendationData" resultType="java.util.Map">
+        SELECT
+        *
+        FROM liepin
+        <if test="(positionsObject != null and positionsObject.size() > 0) or (citiesObject != null and citiesObject.size() > 0) or (salariesObject != null and salariesObject.size() > 0) or (technologiesObject != null and technologiesObject.size() > 0) or (education != null)  or (experience != null)">
+            WHERE
+        </if>
+        <if test="positionsObject != null and positionsObject.size() > 0">
+            <foreach collection="positionsObject" item="position" open="(" separator=" OR " close=")">
+                position LIKE CONCAT('%', #{position}, '%')
+            </foreach>
+        </if>
+        <if test="citiesObject != null and citiesObject.size() > 0">
+            <if test="positionsObject != null and positionsObject.size() > 0">
+                AND
+            </if>
+            city LIKE
+            <foreach collection="citiesObject" item="city" open="(" separator=" OR " close=")">
+                CONCAT('%', #{city}, '%')
+            </foreach>
+        </if>
+        <if test="salariesObject != null and salariesObject.size() > 0">
+            <if test="positionsObject != null and positionsObject.size() > 0 || citiesObject != null and citiesObject.size() > 0">
+                AND
+            </if>
+            <foreach collection="salariesObject" item="salary" open="(" separator=" OR " close=")">
+                ${salary} BETWEEN salary_min AND salary_max
+            </foreach>
+        </if>
+        <if test="technologiesObject != null and technologiesObject.size() > 0">
+            <if test="positionsObject != null and positionsObject.size() > 0 || citiesObject != null and citiesObject.size() > 0 || salariesObject != null and salariesObject.size() > 0">
+                AND
+            </if>
+            <foreach collection="technologiesObject" item="technology" open="(" separator=" OR " close=")">
+                tags LIKE CONCAT('%', #{technology}, '%')
+            </foreach>
+        </if>
+        <if test="education != null">
+            <if test="positionsObject != null and positionsObject.size() > 0 || citiesObject != null and citiesObject.size() > 0 || salariesObject != null and salariesObject.size() > 0 || technologiesObject != null and technologiesObject.size() > 0">
+                AND
+            </if>
+            education LIKE CONCAT('%', #{education}, '%')
+        </if>
+        <if test="experience != null">
+            <if test="positionsObject != null and positionsObject.size() > 0 || citiesObject != null and citiesObject.size() > 0 || salariesObject != null and salariesObject.size() > 0 || technologiesObject != null and technologiesObject.size() > 0 || education != null">
+                AND
+            </if>
+            experience LIKE CONCAT('%', #{experience}, '%')
+        </if>
+    </select>
+
+</mapper>
