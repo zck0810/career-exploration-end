@@ -44,11 +44,17 @@ public class UserServiceImpl extends ServiceImpl<UserMapper, User> implements IU
             throw new RuntimeException("用户不存在");
         }
         
+        System.out.println("Login attempt - Username: " + username + ", Password: " + password);
+        System.out.println("Stored hash: " + user.getPassword());
+        
         if (user.getStatus() == 0) {
             throw new RuntimeException("用户已被禁用");
         }
         
-        if (!passwordEncoder.matches(password, user.getPassword())) {
+        boolean passwordMatch = passwordEncoder.matches(password, user.getPassword());
+        System.out.println("Password match result: " + passwordMatch);
+        
+        if (!passwordMatch) {
             throw new RuntimeException("密码错误");
         }
         
