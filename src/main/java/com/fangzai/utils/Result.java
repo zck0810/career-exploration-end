@@ -28,8 +28,13 @@ public class Result {
         return new Result(20000, "success", data, total);
     }
 
-    //失败响应null
+    //失败响应
+    public static Result fail(String msg) {
+        return new Result(0, msg, null, 0L);
+    }
+    
+    //失败响应null (保持向后兼容)
     public static Result error(String msg) {
-        return new Result(0, msg, 0L, null);
+        return new Result(0, msg, null, 0L);
     }
 }
