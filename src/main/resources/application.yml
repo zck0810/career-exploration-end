@@ -14,6 +14,19 @@ spring:
     username: careerexploration
     password: zhaochangkai0810
 
+  redis:
+    host: localhost
+    port: 6379
+    password: 
+    database: 0
+    timeout: 2000ms
+    jedis:
+      pool:
+        max-active: 100
+        max-idle: 10
+        min-idle: 0
+        max-wait: 2000ms
+
 
 
 
@@ -23,3 +36,10 @@ mybatis-plus:
   global-config:
     db-config:
       id-type: auto
+
+# JWT configuration
+jwt:
+  secret: careerExplorationSecretKey2024ForContentManagementSystem
+  expiration: 86400000  # 24 hours in milliseconds
+  header: Authorization
+  prefix: Bearer 
